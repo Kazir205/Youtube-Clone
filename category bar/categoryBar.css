@@ -1,0 +1,66 @@
+.categoryBar {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+  overflow-x: scroll !important;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  height: 55px;
+}
+
+.categoryBar::-webkit-scrollbar {
+  display: none;
+}
+
+.categoryBar button {
+  height: 30px;
+  border: 1px solid rgb(214, 214, 214);
+  border-radius: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  font-weight: 500;
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  width: auto;
+  transition: 0.4s background-color;
+}
+
+.categoryBar button:hover {
+  background-color: rgb(214, 214, 214);
+  cursor: pointer;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, white, white);
+  border-top: 1px solid rgb(228, 228, 228);
+  border-bottom: 1px solid rgb(228, 228, 228);
+}
+
+.arrowBack {
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  box-shadow: 10px 0px 25px 18px #ffffff;
+}
+
+.arrowBack:hover {
+  cursor: pointer;
+}
+
+.arrowBack > .MuiSvgIcon-root {
+  font-size: 10px;
+}
+
+.arrowForward {
+  box-shadow: -10px 0px 25px 18px #ffffff;
+}

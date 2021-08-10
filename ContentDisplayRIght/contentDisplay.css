@@ -1,0 +1,99 @@
+.rightDisplay {
+    flex: 4;
+    background-color: #F9F9F9;
+    overflow: scroll;
+    height: 100vh;
+}
+
+.contentWrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 250px);
+    justify-content: space-evenly;
+    row-gap: 2.5rem;
+    margin-top: 1.2rem;
+    padding:0 25px;
+}
+
+.singleVideo:hover {
+    cursor: pointer;
+}
+
+.top__thumbnail img {
+    width: 250px;
+}
+
+.top__thumbnail {
+    position: relative;
+}
+
+.duration {
+    position: absolute;
+    z-index: 100;
+    color: white;
+    bottom: 8px;
+    right: 3px;
+    border-radius: 3px;
+    padding: 0 4px;
+    background-color: black;
+    font-size: 14px;
+}
+
+.chIcon-title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.chIcon-title .title {
+    font-weight: 500;
+    padding-right: 10px;
+    flex: 5;
+}
+
+.chIcon-title img {
+    max-width: 35px;
+    max-height: 35px;
+    border-radius: 50%;
+    margin-right: 10px;
+    flex: 1;
+}
+
+.channelName {
+    font-size: small;
+    color: rgb(109, 109, 109);
+    font-weight: 500;
+    margin-left: 45px;
+    text-shadow: black;
+}
+
+.chName-verIcon  {
+    display: flex;
+    align-items: center;
+}
+
+.chName-verIcon .icon {
+    font-size: small;
+    margin-left: 3px;
+    color: rgb(109, 109, 109);
+}
+
+.views-time {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+    margin-left: 45px;
+}
+
+.dot {
+    height: 3px;
+    width: 3px;
+    border-radius: 50%;
+    background-color: rgb(109, 109, 109);
+}
+
+.views, .time {
+    font-size: 14px;
+    color: rgb(109, 109, 109);
+}
